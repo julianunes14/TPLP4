@@ -1,4 +1,4 @@
-<?php include 'cabecalho.php'; ?>
+<?php require '../componentes/header.php'; ?>
 
 <h3>Criar Pessoa</h3>
 <div class=container>
@@ -22,4 +22,4 @@
 	</div>
 </div>
 
-<?php include 'rodape.php'; ?>
+<?php require '../componentes/footer.php'; ?>

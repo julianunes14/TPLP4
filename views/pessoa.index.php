@@ -4,7 +4,7 @@ spl_autoload_register(function ($class_name) {
 });
 ?>
 
-<?php include 'cabecalho.php'; ?>
+<?php require '../componentes/header.php'; ?>
 
 	<h4>Pessoas</h4>
 	<a href="pessoa.create.php" class="btn btn-primary btn-small">Nova Pessoa</a>
@@ -19,7 +19,8 @@ spl_autoload_register(function ($class_name) {
 			."<td><a href='pessoa.edit.php?id=$p->getid' class='btn btn-primary btn-small'>Editar</a></td>"
 			."<td><a href='pessoa.delete.php?id=$p->getid' class='btn btn-primary btn-small'>Excluir</a></td></tr>";
 	}
+	
 	?>
 	</table>
 
-<?php include 'rodape.php'; ?>
+	<?php require '../componentes/footer.php'; ?>
